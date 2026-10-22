@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Choose an internet plan from the pricing page",
+    "sanity": true,
+    "viewport": "mobile",
+    "covers": ["pricing plans", "mobile layout", "plan selection"],
+    "description": "Verifies all four Ghana cedi packages are visible and a visitor can select a plan.",
+    "steps": [
+      "Open the CommunityNet home page on mobile",
+      "Review the four internet packages",
+      "Select the 3-day package"
+    ],
+    "expected": "The GHS 15 three-day plan is visibly selected and the page explains that payment and router access require live configuration."
+  },
+  {
+    "name": "Open the customer login portal",
+    "viewport": "mobile",
+    "covers": [
+      "customer login",
+      "voucher or account access",
+      "input validation"
+    ],
+    "description": "Verifies a customer can open the login form and cannot submit empty credentials.",
+    "steps": [
+      "Open the customer access section",
+      "Leave the phone or username and password fields empty",
+      "Submit the login form"
+    ],
+    "expected": "A validation message appears and no internet-access success is shown."
+  },
+  {
+    "name": "Open administrator setup controls",
+    "viewport": "desktop",
+    "covers": [
+      "admin setup",
+      "router configuration status",
+      "payment configuration status"
+    ],
+    "description": "Verifies setup status is clearly presented without pretending unconfigured services are connected.",
+    "steps": [
+      "Open the administrator section",
+      "Review router integration status",
+      "Review payment integration status"
+    ],
+    "expected": "Router and payment integrations are marked as awaiting configuration, with no false connected or paid status."
+  },
+  {
+    "name": "Display plan duration and price accurately",
+    "viewport": "desktop",
+    "covers": ["pricing accuracy", "subscription durations"],
+    "description": "Verifies each package displays the specified price and duration.",
+    "steps": [
+      "Open the plans section",
+      "Check the daily, three-day, seven-day, and monthly options"
+    ],
+    "expected": "The page shows GH₵10 for 24 hours, GH₵15 for 3 days, GH₵35 for 7 days, and GH₵150 for 30 days."
+  }
+]
